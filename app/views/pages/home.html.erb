@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<style type="text/css">
+   body { background: #C02638 !important;  }
+   .info {color: black; background:#FEFEFA; border-radius:10px;}
+   .white {color: white; text-align: center;}
+   .jumbotron {background: #FEFEFA;}
+   .navbar {background: #FEFEFA;}
+   .title {color:white; text-align: center;}
+</style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <nav class="navbar navbar-default">
+   <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">W. Rich Tutoring</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'About', pages_about_path %></li>
+        <li><%= link_to 'Resources', pages_resources_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'About', pages_about_path %></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Bldg. 528', 'http://bldg528.com' %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Contact</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Report Bug</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <body>
+
+    <div class="container">
+      <div class="header clearfix">
+
+
+      </div>
+
+      <div class="jumbotron">
+        <h1>Having Trouble In Math?</h1>
+        <p class="lead">I'm here to help. I have been tutoring students, from as early as 5th grade, to graduate students for the past few years. Maybe you're having problems in a class, or maybe you have a test coming up, and are looking to maximize your score. If so, let me know!</p>
+        <p><a class="btn btn-lg btn-info" <%= link_to 'Sign Up Now', pages_about_path %> </a></p>
+      </div>
+      <div class="row title" ><div class="col-lg-12"><h1>Services</h1></div>
+      </div>
+      <div class="row marketing info">
+        <div class="col-lg-6">
+          <h4>K-12</h4>
+          <p>Whether it is aritmetic at the elementary school level, to subjects such as Algebra I & II, Geometry or Precalculus that you might find in High School, I can help you or your student get through it painlessly.</p>
+
+          <h4>College</h4>
+          <p>As I'm sure many of you know now, math is usually a required class, regardless of your major. That being said, that doesn't mean you should have to take it numerous times before graduating. Save your money, and let me help you get through that Stats, College Algebra, or even any semester of Calculus.</p>
+
+          <h4>ASVAB</h4>
+          <p>Interested in joining the military, but are lacking the scores to enter? Or maybe you want to improve your score to qualify for various positions (SF, Pilot, etc.). I have extensive experience with the ASVAB test, and the resources to help you achieve your goals. </p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>ACT/SAT/Other Tests</h4>
+          <p>Anyone wanting to enter a university in the U.S. must achieve a certain ACT/SAT score not only to be admitted, but to earn scholarships that will pay off big time while you're studying. A good score is critical to your future, and its a lot more achievable than you might think!</p>
+
+          <h4>Flexible Hours & Locations</h4>
+          <p>I would be happy to work with you, even if your availability might be less than nice. Besides that, I'm highly mobile, so we can work out the best place to meet at anytime.</p>
+
+          <h4>Rates</h4>
+          <p>My rates typically start off at around $10/hr.</p>
+        </div>
+      </div>
+
+      <footer class="footer white">
+        <p>&copy; 2016 Bldg. 528 </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <!-- <script src="js/bootstrap.min.js"></script> -->
+  </body>
+</html>
